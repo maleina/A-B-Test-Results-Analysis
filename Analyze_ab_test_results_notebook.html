@@ -14259,8 +14259,7 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Analyze-A/B-Test-Results">Analyze A/B Test Results<a class="anchor-link" href="#Analyze-A/B-Test-Results">&#182;</a></h2><p>You may either submit your notebook through the workspace here, or you may work from your local machine and submit through the next page.  Either way assure that your code passes the project <a href="https://review.udacity.com/#!/projects/37e27304-ad47-4eb0-a1ab-8c12f60e43d0/rubric">RUBRIC</a>.  <strong>Please save regularly.</strong></p>
-<p>This project will assure you have mastered the subjects covered in the statistics lessons.  The hope is to have this project be as comprehensive of these topics as possible.  Good luck!</p>
+<h2 id="Analyze-A/B-Test-Results">Analyze A/B Test Results<a class="anchor-link" href="#Analyze-A/B-Test-Results">&#182;</a></h2><p>This project will assure you have mastered the subjects covered in the statistics lessons.  The hope is to have this project be as comprehensive of these topics as possible.  Good luck!</p>
 <h2 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">&#182;</a></h2><ul>
 <li><a href="#intro">Introduction</a></li>
 <li><a href="#probability">Part I - Probability</a></li>
@@ -14269,9 +14268,8 @@ a.anchor-link {
 <li><a href="#concl">Conclusion</a></li>
 </ul>
 <p><a id='intro'></a></p>
-<h3 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h3><p>A/B tests are very commonly performed by data analysts and data scientists.  It is important that you get some practice working with the difficulties of these</p>
+<h3 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h3><p>A/B tests are very commonly performed by data analysts and data scientists.  It is important that you get some practice working with the difficulties of these.</p>
 <p>For this project, you will be working to understand the results of an A/B test run by an e-commerce website.  Your goal is to work through this notebook to help the company understand if they should implement the new page, keep the old page, or perhaps run the experiment longer to make their decision.</p>
-<p><strong>As you work through this notebook, follow along in the classroom and answer the corresponding quiz questions associated with each question.</strong> The labels for each classroom concept are provided for each question.  This will assure you are on the right track as you work through the project, and you can feel more confident in your final submission meeting the criteria.  As a final check, assure you meet all the criteria on the <a href="https://review.udacity.com/#!/projects/37e27304-ad47-4eb0-a1ab-8c12f60e43d0/rubric">RUBRIC</a>.</p>
 <p><a id='probability'></a></p>
 <h4 id="Part-I---Probability">Part I - Probability<a class="anchor-link" href="#Part-I---Probability">&#182;</a></h4><p>To get started, let's import our libraries.</p>
 
@@ -14299,7 +14297,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>1.</code> Now, read in the <code>ab_data.csv</code> data. Store it in <code>df</code>.  <strong>Use your dataframe to answer the questions in Quiz 1 of the classroom.</strong></p>
+<p><code>1.</code> Now, read in the <code>ab_data.csv</code> data. Store it in <code>df</code>.</p>
 <p>a. Read in the dataset and take a look at the top few rows here:</p>
 
 </div>
@@ -14644,8 +14642,8 @@ dtype: int64</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>2.</code> For the rows where <strong>treatment</strong> does not match with <strong>new_page</strong> or <strong>control</strong> does not match with <strong>old_page</strong>, we cannot be sure if this row truly received the new or old page.  Use <strong>Quiz 2</strong> in the classroom to figure out how we should handle these rows.</p>
-<p>a. Now use the answer to the quiz to create a new dataset that meets the specifications from the quiz.  Store your new dataframe in <strong>df2</strong>.</p>
+<p><code>2.</code> For the rows where <strong>treatment</strong> does not match with <strong>new_page</strong> or <strong>control</strong> does not match with <strong>old_page</strong>, we cannot be sure if this row truly received the new or old page.</p>
+<p>Store your new dataframe in <strong>df2</strong>.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14704,7 +14702,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>3.</code> Use <strong>df2</strong> and the cells below to answer questions for <strong>Quiz3</strong> in the classroom.</p>
+<p><code>3.</code> Use <strong>df2</strong> and the cells below to answer questions.</p>
 
 </div>
 </div>
@@ -14929,7 +14927,7 @@ This user id is 773192
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>4.</code> Use <strong>df2</strong> in the cells below to answer the quiz questions related to <strong>Quiz 4</strong> in the classroom.</p>
+<p><code>4.</code> Use <strong>df2</strong> in the cells below to answer the following questions.</p>
 <p>a. What is the probability of an individual converting regardless of the page they receive?</p>
 
 </div>
@@ -15184,7 +15182,6 @@ This user id is 773192
 <p><code>2.</code> Assume under the null hypothesis, $p_{new}$ and $p_{old}$ both have "true" success rates equal to the <strong>converted</strong> success rate regardless of page - that is $p_{new}$ and $p_{old}$ are equal. Furthermore, assume they are equal to the <strong>converted</strong> rate in <strong>ab_data.csv</strong> regardless of the page. <br><br></p>
 <p>Use a sample size for each page equal to the ones in <strong>ab_data.csv</strong>.  <br><br></p>
 <p>Perform the sampling distribution for the difference in <strong>converted</strong> between the two pages over 10,000 iterations of calculating an estimate from the null.  <br><br></p>
-<p>Use the cells below to provide the necessary parts of this simulation.  If this doesn't make complete sense right now, don't worry - you are going to work through the problems below to complete this problem.  You can use <strong>Quiz 5</strong> in the classroom to make sure you are on the right track.<br><br></p>
 
 </div>
 </div>
@@ -15618,7 +15615,7 @@ This user id is 773192
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>k. Please explain using the vocabulary you've learned in this course what you just computed in part <strong>j.</strong>  What is this value called in scientific studies?  What does this value mean in terms of whether or not there is a difference between the new and old pages?</p>
+<p>k. Please explain what you just computed in part <strong>j.</strong>  What is this value called in scientific studies?  What does this value mean in terms of whether or not there is a difference between the new and old pages?</p>
 
 </div>
 </div>
@@ -16716,12 +16713,12 @@ p-value: 0.9050583127590245
 <p><a id='concl'></a></p>
 <h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>We used three different methods to analyze whether or not to launch a new landing page:</p>
 <ul>
-<li>probability</li>
+<li>Probability</li>
 <li>A/B testing </li>
-<li>logical regression</li>
+<li>Logistic regression</li>
 </ul>
 <p>Using probability we did not find that our new landing page resulted in more conversions. During A/B testing and logically regression, we used the p-value to assess whether are results were statistically significant enough to conclude that the new landing page performed better than the old page. In each case, we were unable to reject our null hypothesis: i.e. that the old page was as effective or moreso in resulting in a conversion.</p>
-<p>Given these results, I cannot recommend changing the landing page to the new page.</p>
+<p>Given these results, we cannot recommend changing the landing page to the new page.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
